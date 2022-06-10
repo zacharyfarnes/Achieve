@@ -22,6 +22,7 @@
 		AB64B08F282D8F0500A11A69 /* EditProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB64B08E282D8F0500A11A69 /* EditProjectView.swift */; };
 		AB7B932D2826AAC90046CC89 /* Item-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7B932C2826AAC90046CC89 /* Item-CoreDataHelpers.swift */; };
 		AB7B932F2826ACC30046CC89 /* Project-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7B932E2826ACC30046CC89 /* Project-CoreDataHelpers.swift */; };
+		AB909EF22853711D00532BD8 /* Color-Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB909EF12853711D00532BD8 /* Color-Additions.swift */; };
 		ABA556F42824738000DD9E77 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABA556F32824738000DD9E77 /* CloudKit.framework */; };
 		ABA556F62824754100DD9E77 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA556F52824754100DD9E77 /* HomeView.swift */; };
 		ABA556F82824765F00DD9E77 /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA556F72824765F00DD9E77 /* ProjectsView.swift */; };
@@ -50,6 +51,7 @@
 		AB64B08E282D8F0500A11A69 /* EditProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectView.swift; sourceTree = "<group>"; };
 		AB7B932C2826AAC90046CC89 /* Item-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		AB7B932E2826ACC30046CC89 /* Project-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project-CoreDataHelpers.swift"; sourceTree = "<group>"; };
+		AB909EF12853711D00532BD8 /* Color-Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Additions.swift"; sourceTree = "<group>"; };
 		ABA556F12824736200DD9E77 /* UltimatePortfolio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UltimatePortfolio.entitlements; sourceTree = "<group>"; };
 		ABA556F32824738000DD9E77 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		ABA556F52824754100DD9E77 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				ABC1CC46282D47EA0021C3CA /* ProjectHeaderView.swift */,
 				AB1EA67D282B01A600420530 /* Binding-OnChange.swift */,
 				ABA556F52824754100DD9E77 /* HomeView.swift */,
+				AB909EF12853711D00532BD8 /* Color-Additions.swift */,
 				ABA556F72824765F00DD9E77 /* ProjectsView.swift */,
 				AB5A8F97284D38A5001E1F2E /* Bundle-Decodable.swift */,
 				ABB2020B284CEF3F000C1DD6 /* SelectSomethingView.swift */,
@@ -213,6 +216,7 @@
 				AB5A8F9E284D42B3001E1F2E /* AwardsView.swift in Sources */,
 				ABC7107B2566CCF9006C878A /* Main.xcdatamodeld in Sources */,
 				AB7B932F2826ACC30046CC89 /* Project-CoreDataHelpers.swift in Sources */,
+				AB909EF22853711D00532BD8 /* Color-Additions.swift in Sources */,
 				AB64B08F282D8F0500A11A69 /* EditProjectView.swift in Sources */,
 				ABC7107E2566CFDD006C878A /* DataController.swift in Sources */,
 				ABB2020C284CEF3F000C1DD6 /* SelectSomethingView.swift in Sources */,
