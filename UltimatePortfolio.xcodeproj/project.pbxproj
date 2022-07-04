@@ -40,6 +40,7 @@
 		ABC1CC49282D4AFE0021C3CA /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABC1CC48282D4AFE0021C3CA /* Colors.xcassets */; };
 		ABC7107B2566CCF9006C878A /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ABC710792566CCF9006C878A /* Main.xcdatamodeld */; };
 		ABC7107E2566CFDD006C878A /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC7107D2566CFDD006C878A /* DataController.swift */; };
+		ABDDF36828731CF200346687 /* DevelopmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDDF36728731CF200346687 /* DevelopmentTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 		ABC1CC48282D4AFE0021C3CA /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		ABC7107A2566CCF9006C878A /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
 		ABC7107D2566CFDD006C878A /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		ABDDF36728731CF200346687 /* DevelopmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopmentTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 				AB46621528709053001E987C /* AssetTests.swift */,
 				AB040AA028721F11007C315D /* ProjectTests.swift */,
 				AB040AA228722F85007C315D /* AwardTests.swift */,
+				ABDDF36728731CF200346687 /* DevelopmentTests.swift */,
 			);
 			path = UltimatePortfolioTests;
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 				AB040AA328722F85007C315D /* AwardTests.swift in Sources */,
 				AB46620F28708D7B001E987C /* UltimatePortfolioTests.swift in Sources */,
 				AB040AA128721F11007C315D /* ProjectTests.swift in Sources */,
+				ABDDF36828731CF200346687 /* DevelopmentTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
