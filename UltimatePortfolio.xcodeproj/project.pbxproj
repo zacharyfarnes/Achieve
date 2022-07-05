@@ -40,6 +40,9 @@
 		ABC1CC49282D4AFE0021C3CA /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABC1CC48282D4AFE0021C3CA /* Colors.xcassets */; };
 		ABC7107B2566CCF9006C878A /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ABC710792566CCF9006C878A /* Main.xcdatamodeld */; };
 		ABC7107E2566CFDD006C878A /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC7107D2566CFDD006C878A /* DataController.swift */; };
+		ABCC42CE287452400085CF06 /* ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCC42CD287452400085CF06 /* ExtensionTests.swift */; };
+		ABCC42D1287456F40085CF06 /* DecodableDictionary.json in Resources */ = {isa = PBXBuildFile; fileRef = ABCC42D0287456F40085CF06 /* DecodableDictionary.json */; };
+		ABCC42D3287457420085CF06 /* DecodableString.json in Resources */ = {isa = PBXBuildFile; fileRef = ABCC42D2287457420085CF06 /* DecodableString.json */; };
 		ABDDF36828731CF200346687 /* DevelopmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDDF36728731CF200346687 /* DevelopmentTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -94,6 +97,9 @@
 		ABC1CC48282D4AFE0021C3CA /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		ABC7107A2566CCF9006C878A /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
 		ABC7107D2566CFDD006C878A /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		ABCC42CD287452400085CF06 /* ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTests.swift; sourceTree = "<group>"; };
+		ABCC42D0287456F40085CF06 /* DecodableDictionary.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DecodableDictionary.json; sourceTree = "<group>"; };
+		ABCC42D2287457420085CF06 /* DecodableString.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DecodableString.json; sourceTree = "<group>"; };
 		ABDDF36728731CF200346687 /* DevelopmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopmentTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -163,11 +169,13 @@
 		AB46620D28708D7B001E987C /* UltimatePortfolioTests */ = {
 			isa = PBXGroup;
 			children = (
+				ABCC42CF287456CB0085CF06 /* Fixtures */,
 				AB46620E28708D7B001E987C /* UltimatePortfolioTests.swift */,
 				AB46621528709053001E987C /* AssetTests.swift */,
 				AB040AA028721F11007C315D /* ProjectTests.swift */,
 				AB040AA228722F85007C315D /* AwardTests.swift */,
 				ABDDF36728731CF200346687 /* DevelopmentTests.swift */,
+				ABCC42CD287452400085CF06 /* ExtensionTests.swift */,
 			);
 			path = UltimatePortfolioTests;
 			sourceTree = "<group>";
@@ -254,6 +262,15 @@
 				ABA556F32824738000DD9E77 /* CloudKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ABCC42CF287456CB0085CF06 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				ABCC42D0287456F40085CF06 /* DecodableDictionary.json */,
+				ABCC42D2287457420085CF06 /* DecodableString.json */,
+			);
+			path = Fixtures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,6 +368,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABCC42D1287456F40085CF06 /* DecodableDictionary.json in Resources */,
+				ABCC42D3287457420085CF06 /* DecodableString.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +433,7 @@
 				AB46621628709053001E987C /* AssetTests.swift in Sources */,
 				AB040AA328722F85007C315D /* AwardTests.swift in Sources */,
 				AB46620F28708D7B001E987C /* UltimatePortfolioTests.swift in Sources */,
+				ABCC42CE287452400085CF06 /* ExtensionTests.swift in Sources */,
 				AB040AA128721F11007C315D /* ProjectTests.swift in Sources */,
 				ABDDF36828731CF200346687 /* DevelopmentTests.swift in Sources */,
 			);
