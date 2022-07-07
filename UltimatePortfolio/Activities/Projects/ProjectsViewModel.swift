@@ -7,7 +7,6 @@
 
 import CoreData
 import Foundation
-import SwiftUI
 
 extension ProjectsView {
     class ViewModel: NSObject, ObservableObject, NSFetchedResultsControllerDelegate {
@@ -24,7 +23,11 @@ extension ProjectsView {
             self.showClosedProjects = showClosedProjects
 
             let request: NSFetchRequest<Project> = Project.fetchRequest()
-            request.sortDescriptors = [NSSortDescriptor(keyPath: \Project.creationDate, ascending: false)]
+
+            request.sortDescriptors = [
+                NSSortDescriptor(keyPath: \Project.creationDate, ascending: false)
+            ]
+
             request.predicate = NSPredicate(format: "closed = %d", showClosedProjects)
 
             projectsController = NSFetchedResultsController(
