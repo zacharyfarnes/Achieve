@@ -51,6 +51,8 @@
 		ABCC42CE287452400085CF06 /* ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCC42CD287452400085CF06 /* ExtensionTests.swift */; };
 		ABCC42D1287456F40085CF06 /* DecodableDictionary.json in Resources */ = {isa = PBXBuildFile; fileRef = ABCC42D0287456F40085CF06 /* DecodableDictionary.json */; };
 		ABCC42D3287457420085CF06 /* DecodableString.json in Resources */ = {isa = PBXBuildFile; fileRef = ABCC42D2287457420085CF06 /* DecodableString.json */; };
+		ABD911C82883613D008B7A5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD911C72883613D008B7A5B /* AppDelegate.swift */; };
+		ABD911CA28836146008B7A5B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD911C928836146008B7A5B /* SceneDelegate.swift */; };
 		ABDC9B872875A33D005A0E9F /* UltimatePortfolioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDC9B862875A33D005A0E9F /* UltimatePortfolioUITests.swift */; };
 		ABDC9B902875D4E7005A0E9F /* ProjectsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDC9B8F2875D4E7005A0E9F /* ProjectsViewModel.swift */; };
 		ABDDF36828731CF200346687 /* DevelopmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDDF36728731CF200346687 /* DevelopmentTests.swift */; };
@@ -126,6 +128,8 @@
 		ABCC42CD287452400085CF06 /* ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTests.swift; sourceTree = "<group>"; };
 		ABCC42D0287456F40085CF06 /* DecodableDictionary.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DecodableDictionary.json; sourceTree = "<group>"; };
 		ABCC42D2287457420085CF06 /* DecodableString.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DecodableString.json; sourceTree = "<group>"; };
+		ABD911C72883613D008B7A5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ABD911C928836146008B7A5B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		ABDC9B842875A33D005A0E9F /* UltimatePortfolioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UltimatePortfolioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABDC9B862875A33D005A0E9F /* UltimatePortfolioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltimatePortfolioUITests.swift; sourceTree = "<group>"; };
 		ABDC9B8F2875D4E7005A0E9F /* ProjectsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewModel.swift; sourceTree = "<group>"; };
@@ -198,6 +202,8 @@
 				AB99E047286F2FBB00BAE232 /* Localization */,
 				AB99E048286F304400BAE232 /* Configuration */,
 				AB2FB6CC2566CA30001D35BA /* UltimatePortfolioApp.swift */,
+				ABD911C72883613D008B7A5B /* AppDelegate.swift */,
+				ABD911C928836146008B7A5B /* SceneDelegate.swift */,
 				AB2FB6CE2566CA30001D35BA /* ContentView.swift */,
 				ABC7107D2566CFDD006C878A /* DataController.swift */,
 				AB2FB6D02566CA32001D35BA /* Assets.xcassets */,
@@ -517,6 +523,8 @@
 				AB2FB6CF2566CA30001D35BA /* ContentView.swift in Sources */,
 				AB1EA67E282B01A600420530 /* Binding-OnChange.swift in Sources */,
 				AB06124C284A66C90016C53E /* Sequence-Sorting.swift in Sources */,
+				ABD911C82883613D008B7A5B /* AppDelegate.swift in Sources */,
+				ABD911CA28836146008B7A5B /* SceneDelegate.swift in Sources */,
 				AB5A8F98284D38A5001E1F2E /* Bundle-Decodable.swift in Sources */,
 				AB4A3DA6286665C20026E6D1 /* ItemListView.swift in Sources */,
 				AB030C482880BA440055642A /* SKProduct-LocalizedPrice.swift in Sources */,
