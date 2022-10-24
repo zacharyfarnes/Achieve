@@ -23,34 +23,46 @@ struct HomeView: View {
 
     var body: some View {
         NavigationView {
-            ScrollView {
-                if let item = viewModel.selectedItem {
-                    NavigationLink(
-                        destination: EditItemView(item: item),
-                        tag: item,
-                        selection: $viewModel.selectedItem,
-                        label: EmptyView.init
-                    )
-                    .id(item)
-                }
-
-                VStack(alignment: .leading) {
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        LazyHGrid(rows: projectRows) {
-                            ForEach(viewModel.projects, content: ProjectSummaryView.init)
+            Group {
+                if viewModel.projects.isEmpty {
+                    Text("There's nothing here right now.")
+                        .foregroundColor(.secondary)
+                } else {
+                    ScrollView {
+                        if let item = viewModel.selectedItem {
+                            NavigationLink(
+                                destination: EditItemView(item: item),
+                                tag: item,
+                                selection: $viewModel.selectedItem,
+                                label: EmptyView.init
+                            )
+                            .id(item)
                         }
-                        .padding([.horizontal, .top])
-                        .fixedSize(horizontal: false, vertical: true)
-                    }
 
-                    VStack(alignment: .leading) {
-                        ItemListView(title: "Up next", items: viewModel.upNext)
-                        ItemListView(title: "More to explore", items: viewModel.moreToExplore)
+                        VStack(alignment: .leading, spacing: 0) {
+                            ScrollView(.horizontal, showsIndicators: false) {
+                                LazyHGrid(rows: projectRows) {
+                                    ForEach(viewModel.projects) { project in
+                                        NavigationLink(destination: EditProjectView(project: project)) {
+                                            ProjectSummaryView(project: project)
+                                        }
+                                    }
+                                }
+                                .padding()
+                                .fixedSize(horizontal: false, vertical: true)
+                            }
+                            Divider()
+                                .padding(.horizontal)
+                            VStack(alignment: .leading) {
+                                ItemListView(title: "Up next", items: viewModel.upNext)
+                                ItemListView(title: "More to explore", items: viewModel.moreToExplore)
+                            }
+                            .padding([.horizontal, .bottom])
+                        }
                     }
-                    .padding(.horizontal)
+                    .background(Color.systemGroupedBackground.ignoresSafeArea())
                 }
             }
-            .background(Color.systemGroupedBackground.ignoresSafeArea())
             .navigationTitle("Home")
             .onContinueUserActivity(CSSearchableItemActionType, perform: loadSpotlightItem)
         }

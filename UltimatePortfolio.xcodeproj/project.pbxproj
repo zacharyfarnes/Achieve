@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,7 +21,7 @@
 		AB1A52742884A2CF00FA8F6C /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB1A52732884A2CF00FA8F6C /* SwiftUI.framework */; };
 		AB1A52772884A2CF00FA8F6C /* PortfolioWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1A52762884A2CF00FA8F6C /* PortfolioWidget.swift */; };
 		AB1A52792884A2D300FA8F6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB1A52782884A2D300FA8F6C /* Assets.xcassets */; };
-		AB1A527D2884A2D300FA8F6C /* PortfolioWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AB1A52702884A2CF00FA8F6C /* PortfolioWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AB1A527D2884A2D300FA8F6C /* PortfolioWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = AB1A52702884A2CF00FA8F6C /* PortfolioWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		AB1A52822884A3D500FA8F6C /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ABC710792566CCF9006C878A /* Main.xcdatamodeld */; };
 		AB1A52832884A3E400FA8F6C /* Item-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7B932C2826AAC90046CC89 /* Item-CoreDataHelpers.swift */; };
 		AB1A52842884A3EE00FA8F6C /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC7107D2566CFDD006C878A /* DataController.swift */; };
@@ -99,15 +99,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		AB1A527E2884A2D300FA8F6C /* Embed App Extensions */ = {
+		AB1A527E2884A2D300FA8F6C /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				AB1A527D2884A2D300FA8F6C /* PortfolioWidgetExtension.appex in Embed App Extensions */,
+				AB1A527D2884A2D300FA8F6C /* PortfolioWidgetExtension.appex in Embed Foundation Extensions */,
 			);
-			name = "Embed App Extensions";
+			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -447,7 +447,7 @@
 				AB2FB6C52566CA30001D35BA /* Sources */,
 				AB2FB6C62566CA30001D35BA /* Frameworks */,
 				AB2FB6C72566CA30001D35BA /* Resources */,
-				AB1A527E2884A2D300FA8F6C /* Embed App Extensions */,
+				AB1A527E2884A2D300FA8F6C /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
@@ -502,7 +502,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1340;
-				LastUpgradeCheck = 1220;
+				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					AB1A526F2884A2CF00FA8F6C = {
 						CreatedOnToolsVersion = 13.4.1;
@@ -587,6 +587,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		AB91BF5C2867BADC006BD304 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -799,6 +800,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -860,6 +862,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

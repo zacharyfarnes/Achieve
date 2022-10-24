@@ -39,28 +39,39 @@ struct PortfolioWidgetEntryView: View {
 
     var body: some View {
         VStack(spacing: 5) {
-            ForEach(items) { item in
-                HStack {
-                    Color(item.project?.color ?? "Light Blue")
-                        .frame(width: 5)
-                        .clipShape(Capsule())
-
-                    VStack(alignment: .leading) {
-                        Text(item.itemTitle)
-                            .font(.headline)
-                            .layoutPriority(1)
-
-                        if let projectTitle = item.project?.title {
-                            Text(projectTitle)
-                                .foregroundColor(.secondary)
-                        }
-                    }
-
-                    Spacer()
-                }
+            if items.isEmpty {
+                Text("There's nothing here right now.")
+                    .foregroundColor(.secondary)
+            } else {
+                ForEach(items, content: ItemRowWidgetView.init)
             }
         }
         .padding(20)
+    }
+}
+
+struct ItemRowWidgetView: View {
+    let item: Item
+
+    var body: some View {
+        HStack {
+            Color(item.project?.color ?? "Light Blue")
+                .frame(width: 5)
+                .clipShape(Capsule())
+
+            VStack(alignment: .leading) {
+                Text(item.itemTitle)
+                    .font(.headline)
+                    .layoutPriority(1)
+
+                if let projectTitle = item.project?.title {
+                    Text(projectTitle)
+                        .foregroundColor(.secondary)
+                }
+            }
+
+            Spacer()
+        }
     }
 }
 
